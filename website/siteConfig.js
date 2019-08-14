@@ -24,13 +24,21 @@ const siteConfig = {
   title: '真善 - True Goodness', // Title for your website.
   tagline: 'Shinzen Young Transcripts',
   url: 'https://notegone.github.io', // Your website URL
-  baseUrl: '/truegoodness/',
+  baseUrl: '/', // Base URL for your project */
+  // For github.io type URLs, you would set the url and baseUrl like:
+  //   url: 'https://facebook.github.io',
+  //   baseUrl: '/test-site/',
+
+  // Used for publishing and more
   projectName: 'truegoodness',
-  organizationName: 'notegone'
+  organizationName: 'notegone',
+  // For top-level user or org sites, the organization is still the same.
+  // e.g., for the https://JoelMarcey.github.io site, it would be set like...
+  //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { search: true },
+    {search: true },
     {doc: 'expandcontract', label: 'expandcontract'},
     {doc: 'shinzeninterviews', label: 'Shinzen Videos'}
   ],
