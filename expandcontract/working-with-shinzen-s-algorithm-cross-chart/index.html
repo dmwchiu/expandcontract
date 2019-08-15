@@ -1,0 +1,344 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Working with Shinzen's Algorithm 'Cross' Chart</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="真善 - True Goodness" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              真善 - True Goodness
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Working with Shinzen's Algorithm 'Cross' Chart
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="真善 - True Goodness" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    真善 - True Goodness
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../" title="expandcontract" class="md-nav__link">
+      expandcontract
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../shinzenvideos/" title="Shinzen Videos" class="md-nav__link">
+      Shinzen Videos
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Working with Shinzen's Algorithm 'Cross' Chart</h1>
+                
+                <p>We have 4 themes that are in the rectal linear configurations.</p>
+<p>So you work with your ordinary states.</p>
+<p>Physical emotional sensations, external sites external sounds internal mental pictures internal talk.</p>
+<p>So that's a whole.</p>
+<p>The whole approach.</p>
+<p>Bull semen no touch sight sound feel in its abbreviated in there.</p>
+<p>We also have a way of.</p>
+<p>Enjoying restful states.</p>
+<p>So.</p>
+<p>We you can note the corresponding restful states physical relaxation and so forth relaxation light silence peace plan quiet.</p>
+<p>You can start there, you can start there actually you can start anywhere.</p>
+<p>Now we've got.</p>
+<p>Explorer dynamic states so you can not flow you could not vanishings.</p>
+<p>There's another way to work with restful experience.</p>
+<p>Which is the do nothing?</p>
+<p>Scott like 4 themes, but there's actually 6 procedures each of which has various versions as you'll remember.</p>
+<p>So you can start anywhere you can go anywhere.</p>
+<p>Well, one way you might use it is, you just pick.</p>
+<p>One technique 1 version and that's all you're going to do.</p>
+<p>In that case this represents.</p>
+<p>A Sears Roebuck catalog of spiritual spiritual practices and you decide to make 1 Purchas.</p>
+<p>And that's it. So maybe maybe you like noting restful state so that's what you do and you don't worry about all this other stuff.</p>
+<p>Another way to go about it is.</p>
+<p>Well, you like several of them and you arrange them in a workout sequence for yourself, like a Nautilus cycle.</p>
+<p>Each one of these is a piece of workout equipment. Now, those of you that were in the PM group process today.</p>
+<p>I gave you up I gave you the full Psycho Spiritual Nautilus Cycle. We started by noting ordinary states.</p>
+<p>Sort of like OK, we started the course level of ordinary experience.</p>
+<p>Untangle.</p>
+<p>Then we OK, let's note the corresponding restful states thinned out little more pleasant.</p>
+<p>'Cause we're a little more settled now OK now there's could be flow. In the ordinary or the restful so we know the flow, then we not noted vanishings, now we've got quite a momentum.</p>
+<p>So if we do nothing there's likelihood that they'll be concentration clarity equanimity. Even though we're not trying to make it be there and indeed even a likelihood that they'll be quite a bit of rest fullness and Energie even though we're not in any way intentionally doing anything.</p>
+<p>So we sort of like OK. This is what in Catholicism would be called infused contemplation or passive contemplation. You're not doing anything anymore, letting this source do you?</p>
+<p>And that should take you into that and where do you go from that?</p>
+<p>From where do you go after crucifixion only one place resurrection?</p>
+<p>So you reanimate in a more positive way by a focus on positive now.</p>
+<p>You could start back here again right.</p>
+<p>It's a cycle if you come back here.</p>
+<p>Now you just noting what is but because you've been through this whole thing? What is is probably a little better than what it was an hour ago?</p>
+<p>OK and then you just cycle around OK and cycle rounded cycle around and it hits all the Psycho spiritual muscle groups.</p>
+<p>So the one I just.</p>
+<p>Showed went</p>
+<p>Ordinary rest.</p>
+<p>Flow banishing do nothing positive and then you can go back to order.</p>
+<p>This was designed to.</p>
+<p>Make it easy for.</p>
+<p>A person to interactively guide you.</p>
+<p>Once you have internalize these categories.</p>
+<p>If something comes up in the real world that.</p>
+<p>Blows you away.</p>
+<p>All you gotta do is call me or any facilitator that I've trained in this system and you will be back on track.</p>
+<p>Lickity split.</p>
+<p>I mean within 1/2 an hour. I don't care. How big it is I mean, I don't care. How big it is this gives a standard vocabulary.</p>
+<p>That a facilitator can be there to remind you most of us are not going to do the monastery thing.</p>
+<p>So.</p>
+<p>How are you going to get the industrial strength?</p>
+<p>Experience is that People.</p>
+<p>Get when they expose themselves to the intensity of traditional monastic practice.</p>
+<p>How you're going to get it is OK, you're not going to go to a monastery?</p>
+<p>But is the monastery going to come to you, you bet.</p>
+<p>You'll have an injury will have an illness you'll have.</p>
+<p>Something happened.</p>
+<p>You'll be betrayed.</p>
+<p>You will betray you.</p>
+<p>Will be mugged stuff is going to happen.</p>
+<p>Stuff is going to happen.</p>
+<p>When it happens.</p>
+<p>That's a monastery.</p>
+<p>If you know how to use it as a monastery, but there's maybe a little hard to remember that, you can do that. And it may be quite hard to remember exactly how to do that.</p>
+<p>On your own.</p>
+<p>But if you call me or someone like me.</p>
+<p>And if you're already familiar with this system.</p>
+<p>We can get you on track very quickly.</p>
+<p>I do it everyday People call me. You know, I just got mugged in la at gunpoint adjust my son. Just got arrested my best friend just committed suicide.</p>
+<p>And.</p>
+<p>You know, OK, so they have to talk about a little bit and then we get down to work.</p>
+<p>And.</p>
+<p>That person.</p>
+<p>Is now in as intense a training situation as anybody ever put themselves through?</p>
+<p>In the name of practice.</p>
+<p>And because there's an external person leading them through their able to get.</p>
+<p>Profound.</p>
+<p>Permanent.</p>
+<p>Growth out of that, so that's why I created this thing to be.</p>
+<p>Something that you could sort of internalize or you could internalize that is optimal for an algorithm approach to optimize your experience that you might not be remember how to do.</p>
+<p>But.</p>
+<p>Eh.</p>
+<p>Professionally trained facilitator does know how to do.</p>
+<p>And will take you through.</p>
+<p>And that's how it works so.</p>
+<p>Use let's say you start with ordinary states well. Maybe there's a lot of flow. Or maybe there's a lot of banishing so let's explore that or maybe?</p>
+<p>You start with restful states you want to start there and things get pretty restful so OK. Now let's drop the effort in let's do nothing.</p>
+<p>And then well where to go from here well natural place to go from nothing. Whatsoever is to a new good something etc, etc. So you Lupin Branch. You can start anywhere, depending on what comes up.</p>
+<p>So another way that you can use this is to sort of loop and branch that makes it more complicated.</p>
+<p>Don't have to do that, but it gives you flexibility.</p>
+<p>That and that gives you the ability to.</p>
+<p>Optimally deal with.</p>
+<p>Both windows of opportunity and Walls that make challenge.</p>
+<p>If you even if you don't use it as a looping and branching optimizing algorithm.</p>
+<p>When something comes up in your life.</p>
+<p>And you call for an interactive guided session and now OK. We're going to take this catastrophe. E and we're going to make it into your monastery. This is how will work. I'll take you through the algorithm an with a lot more bells and whistles that are on here. 'cause I've got all these special exercises. If the standard stuff doesn't work my looping and branching.</p>
+<p>Algorithm is huge so you sort of Doc your little computer program inside my huge computer program or one of my facilitators and we optimize your experience and then you're going to be able to get that maximum Psycho spiritual growth out of the do, do.</p>
+<p>Of of life.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
